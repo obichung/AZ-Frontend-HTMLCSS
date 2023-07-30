@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTP-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>HTML Table</title>
+        <style>
+            table, th, td{
+                border: 2px solid blueviolet;
+                border-collapse: collapse;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+                background-color:rgb(253, 40, 40);
+                width: 400px;
+            }
+            td{
+                padding: 12px;
+                font-size: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            th{
+                padding: 12px;
+                font-size:26px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-align: center;
+            }
+            .cleared:hover{
+                background-color: greenyellow;
+            }
+            .Totals{
+                background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>
+                <b>Student Details</b>
+            </caption>
+            <colgroup span="1" style="background-color: aqua;"></colgroup>
+            <thead>
+             <tr>
+                    <th>NAME</td>
+                    <th>AGE</td>
+                    <th>CITY</td>
+                </tr> 
+            </thead>
+            <tbody>              
+                <tr>
+                    <td>Emmanuel</td>
+                    <td>20</td>
+                    <td>Abuja</td>
+                </tr>
+                <tr class="cleared">
+                    <td>David</td>
+                    <td>22</td>
+                    <td>Kigali</td>
+                </tr>
+                <tr>
+                    <td>Kelvin</td>
+                    <td>24</td>
+                    <td>Nairobi</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="Totals">
+                    <td colspan="2">Total students</td>
+                    <td>3</td>
+                </tr>
+            </tfoot> 
+        </table>
+    </body>
+</html>
