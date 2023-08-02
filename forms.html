@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTP-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML_forms</title>
+    </head>
+    <body>
+        <form>
+            <label for="fullname">Full Name<small style="color:red">*</small></label>
+            <input type="text" name="fullname" id="fullname" placeholder="Enter Fullname" required><br>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email Address" required><br>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter Age" required min="18" max="60"><br>
+            <label for="tel">Telephone Number</label>
+            <input type="tel" name="tel" id="tel" placeholder="123-1234-123" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required><br>
+            <label for="DOB">Date of Birth</label>
+            <input type="date" name="date of birth" id="DOB" placeholder="Enter date of Birth" required><br>
+            <label for="country">Country of origin</label>
+            <select id="contry" name="country">
+                <option value="select">-select-</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Other">Other</option>
+            </select><br>
+            <section>
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="gender" value="Male">
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" id="gender" value="Female"><br>
+                <input type="checkbox" name="hobby1" id="hobby1" value="Reading">
+                <label for="hobby1">Reading</label><br>
+                <input type="checkbox" name="hobby2" id="hobby2" value="Coding">
+                <label for="hobby2">Coding</label><br>
+                <input type="checkbox" name="hobby3" id="hobby3" value="Sports">
+                <label for="hobby3">Sports</label><br>
+                <input type="checkbox" name="hobby4" id="hobby4" value="Music">
+                <label for="hobby4">Music</label><br>
+                <input type="checkbox" name="hobby5" id="hobby5" value="Other">
+                <label for="hobby5">Other</label>
+            </section>
+            <textarea name="Comments" rows="8" cols="20" Placeholder="Enter your comments here"></textarea>
+            <input type="submit">
+
+        </form>
+    </body>
+</html>
